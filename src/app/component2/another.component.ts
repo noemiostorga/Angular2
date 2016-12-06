@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
       another Works!
     </p>
   `,
-  styles: []
+  styles: [`
+      p {
+        color: pink;
+      }
+  `]
 })
 export class AnotherComponent implements OnInit {
 
