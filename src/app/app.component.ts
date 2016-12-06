@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hey',
   template: `
 	<h1> testing inline templating </h1>
+	<component2></component2>
   `,
   styles: [`
 	h1{
