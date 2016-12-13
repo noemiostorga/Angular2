@@ -1,16 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'hey',
+  selector: 'fa-app',
   template: `
-	<h1> testing inline templating </h1>
-	<component2></component2>
-  <app-another>
-    <div>
-      <p>hello</p>
-      <h1>world</h1>
-    </div>
-  </app-another>
+      <h1>{{title}}</h1>
+      <app-databinding></app-databinding>
   `,
   styles: [`
 	h1{
@@ -19,5 +13,5 @@ import { Component } from '@angular/core';
   `]
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Binding Methods';
 }
