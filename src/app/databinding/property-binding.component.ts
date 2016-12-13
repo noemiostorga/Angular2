@@ -11,4 +11,5 @@ export class PropertyBindingComponent{
 
   @Input() result: number= 0;
 
+
 }
