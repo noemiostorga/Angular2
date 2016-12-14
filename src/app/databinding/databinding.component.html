@@ -10,5 +10,7 @@
 
  <app-property-binding [result]="10"></app-property-binding>
  <h1>event binding</h1>
- <app-event-binding (clicked)="onClicked($event)"></app-event-binding>
+ <app-event-binding (theProp)="func($event)" ></app-event-binding>
+ <h1>Two-Way binding </h1>
+ <app-twoway-binding></app-twoway-binding>
 

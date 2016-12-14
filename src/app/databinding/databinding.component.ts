@@ -12,7 +12,8 @@ export class DatabindingComponent{
 		return true;
 	}
 
-	onClicked(value: string){
+	func(value: number){
 		alert(value);
 	}
+
 }

@@ -1,16 +1,17 @@
-import { Component, EventEmitter, Output} from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-event-binding',
   template: `
-    <button (click)="onClicked()">click me</button>
+    <button (click)="func()">Click Me</button>
   `,
   styles: []
 })
 export class EventBindingComponent {
-  @Output() clicked = new EventEmitter<string>();
-  onClicked(){
-    this.clicked.emit('the emitting works!');
-  }
 
+  @Output() theProp = new EventEmitter<number>();
+
+  func(){
+    this.theProp.emit(3);
+  }
 }
